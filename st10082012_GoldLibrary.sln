@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.33027.164
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "st10082012_GoldLibrary", "st10082012_GoldLibrary\st10082012_GoldLibrary.csproj", "{8CD7976E-8D6F-4756-A495-BE9F06DDA7A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandonNumberGeneratorLibrary", "RandonNumberGeneratorLibrary\RandonNumberGeneratorLibrary.csproj", "{80F03298-81D1-4D53-A9C6-A5173A03F52B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomNumberGeneratorLibrary", "RandonNumberGeneratorLibrary\RandomNumberGeneratorLibrary.csproj", "{80F03298-81D1-4D53-A9C6-A5173A03F52B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

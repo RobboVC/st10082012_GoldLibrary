@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Windows.Forms;
-using RandonNumberGeneratorLibrary;
-
+﻿
 namespace st10082012_GoldLibrary
 {
-    partial class ReplaceBooks
+    partial class IdentifyAreas
     {
-
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -35,39 +29,35 @@ namespace st10082012_GoldLibrary
         /// </summary>
         private void InitializeComponent()
         {
-            this.replaceBooksControl1 = new st10082012_GoldLibrary.Controls.ReplaceBooksControl();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IdentifyAreas));
+            this.identifyAreasControl1 = new st10082012_GoldLibrary.Controls.IdentifyAreasControl();
             this.SuspendLayout();
             // 
-            // replaceBooksControl1
+            // identifyAreasControl1
             // 
-            this.replaceBooksControl1.BackColor = System.Drawing.Color.Transparent;
-            this.replaceBooksControl1.Location = new System.Drawing.Point(1, -5);
-            this.replaceBooksControl1.Name = "replaceBooksControl1";
-            this.replaceBooksControl1.Size = new System.Drawing.Size(1000, 700);
-            this.replaceBooksControl1.TabIndex = 0;
+            this.identifyAreasControl1.BackColor = System.Drawing.Color.Transparent;
+            this.identifyAreasControl1.Location = new System.Drawing.Point(-10, -1);
+            this.identifyAreasControl1.Name = "identifyAreasControl1";
+            this.identifyAreasControl1.Size = new System.Drawing.Size(1000, 650);
+            this.identifyAreasControl1.TabIndex = 0;
             // 
-            // ReplaceBooks
+            // IdentifyAreas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Maroon;
-            this.BackgroundImage = global::st10082012_GoldLibrary.Properties.Resources.imgShelf;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(976, 658);
-            this.Controls.Add(this.replaceBooksControl1);
-            this.DoubleBuffered = true;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(978, 649);
+            this.Controls.Add(this.identifyAreasControl1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "ReplaceBooks";
-            this.Text = "Lets Play!";
+            this.Name = "IdentifyAreas";
+            this.Text = "IdentifyAreas";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-
-
-        private Controls.ReplaceBooksControl replaceBooksControl1;
+        private Controls.IdentifyAreasControl identifyAreasControl1;
     }
 }

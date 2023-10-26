@@ -57,27 +57,27 @@ namespace st10082012_GoldLibrary
             this.Text = "Gold Library";
             this.ResumeLayout(false);
 
-            mainMenuControl1.DisableFindAndIdentifyButtons();
-            mainMenuControl1.SetReplaceButtonClickEvent(btnReplace_Click);
-
         }
         #endregion
 
-        private void btnReplace_Click(object sender, EventArgs e)
-        {
-            // Hide the current MainMenu form
-            this.Hide();
 
-            // Create an instance of the ReplaceBooks form
-            ReplaceBooks replaceBooksForm = new ReplaceBooks();
+        //WILL FIX THIS CODE LATER IN POE FINAL
 
-            // Show the ReplaceBooks form
-            replaceBooksForm.ShowDialog(); // Use ShowDialog() to make it a modal dialog
+        //private void btnReplace_Click(object sender, EventArgs e)
+        //{
+        //    // Hide the current MainMenu form
+        //    this.Hide();
 
-            // Optionally, you can close the ReplaceBooks form and show the MainMenu form again
-            replaceBooksForm.Close();
-            this.Show();
-        }
+        //    // Create an instance of the ReplaceBooks form
+        //    ReplaceBooks replaceBooksForm = new ReplaceBooks();
+
+        //    // Show the ReplaceBooks form
+        //    replaceBooksForm.ShowDialog(); // Use ShowDialog() to make it a modal dialog
+
+            
+        //    replaceBooksForm.Close();
+        //    this.Show();
+        //}
 
         private Controls.MainMenuControl mainMenuControl1;
     }

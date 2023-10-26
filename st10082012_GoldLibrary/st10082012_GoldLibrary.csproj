@@ -50,6 +50,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\IdentifyAreasControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IdentifyAreasControl.Designer.cs">
+      <DependentUpon>IdentifyAreasControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MainMenuControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -61,6 +67,13 @@
     </Compile>
     <Compile Include="Controls\ReplaceBooksControl.Designer.cs">
       <DependentUpon>ReplaceBooksControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeweyDictionary.cs" />
+    <Compile Include="IdentifyAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdentifyAreas.Designer.cs">
+      <DependentUpon>IdentifyAreas.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -82,11 +95,17 @@
     <Compile Include="ReplaceBooks.Designer.cs">
       <DependentUpon>ReplaceBooks.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\IdentifyAreasControl.resx">
+      <DependentUpon>IdentifyAreasControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\MainMenuControl.resx">
       <DependentUpon>MainMenuControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ReplaceBooksControl.resx">
       <DependentUpon>ReplaceBooksControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentifyAreas.resx">
+      <DependentUpon>IdentifyAreas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -119,12 +138,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\imgLibrary.jpg" />
+    <None Include="Resources\imgShelf2.jpg" />
     <None Include="Resources\imgShelf.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RandonNumberGeneratorLibrary\RandonNumberGeneratorLibrary.csproj">
+    <ProjectReference Include="..\RandonNumberGeneratorLibrary\RandomNumberGeneratorLibrary.csproj">
       <Project>{80f03298-81d1-4d53-a9c6-a5173a03f52b}</Project>
-      <Name>RandonNumberGeneratorLibrary</Name>
+      <Name>RandomNumberGeneratorLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

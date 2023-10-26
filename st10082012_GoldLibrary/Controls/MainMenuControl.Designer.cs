@@ -58,13 +58,14 @@ namespace st10082012_GoldLibrary.Controls
             // 
             this.btnReplace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.btnReplace.Font = new System.Drawing.Font("Castellar", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReplace.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnReplace.ForeColor = System.Drawing.Color.White;
             this.btnReplace.Location = new System.Drawing.Point(352, 253);
             this.btnReplace.Name = "btnReplace";
             this.btnReplace.Size = new System.Drawing.Size(203, 105);
             this.btnReplace.TabIndex = 1;
             this.btnReplace.Text = "Replace Books";
             this.btnReplace.UseVisualStyleBackColor = false;
+            this.btnReplace.Click += new System.EventHandler(this.btnReplace_Click);
             // 
             // btnIdentify
             // 
@@ -77,6 +78,7 @@ namespace st10082012_GoldLibrary.Controls
             this.btnIdentify.TabIndex = 2;
             this.btnIdentify.Text = "Identify Areas";
             this.btnIdentify.UseVisualStyleBackColor = false;
+            this.btnIdentify.Click += new System.EventHandler(this.btnIdentify_Click);
             // 
             // btnFind
             // 
@@ -104,19 +106,18 @@ namespace st10082012_GoldLibrary.Controls
             this.PerformLayout();
 
         }
-
         #endregion
 
-        public void DisableFindAndIdentifyButtons()
-        {
-            btnFind.Enabled = false;
-            btnIdentify.Enabled = false;
-        }
+        //public void DisableFindButton()
+        //{
+        //    btnFind.Enabled = false;
+        //    //btnIdentify.Enabled = false;
+        //}
 
-        public void SetReplaceButtonClickEvent(EventHandler eventHandler)
-        {
-            btnReplace.Click += eventHandler;
-        }
+        //public void SetReplaceButtonClickEvent(EventHandler eventHandler)
+        //{
+        //    btnReplace.Click += eventHandler;
+        //}
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnReplace;

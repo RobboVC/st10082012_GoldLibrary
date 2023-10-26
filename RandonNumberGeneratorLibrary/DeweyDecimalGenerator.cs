@@ -10,19 +10,19 @@ namespace RandonNumberGeneratorLibrary
     {
         private static readonly Random random = new Random();
 
-        // Generate a random number for the main class (e.g., 100, 200, 300, etc.)
+        //Generate a random number for the main class (e.g., 100, 200, 300, etc.)
         public static int GenerateMainClass()
         {
-            return random.Next(100, 900);  // Adjust the range as needed
+            return random.Next(100, 900);  
         }
 
-        // Generate a random number for the division (e.g., 1-99)
+        //Generate a random number for the division
         public static int GenerateDivision()
         {
-            return random.Next(1, 100);  // Adjust the range as needed
+            return random.Next(1, 100);  
         }
 
-        // Generate a random author cutter number (a three-letter code, for example)
+        //Generate a random author cutter number 
         public static string GenerateAuthorCutter()
         {
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
