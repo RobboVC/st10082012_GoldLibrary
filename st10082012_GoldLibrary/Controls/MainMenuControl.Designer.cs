@@ -91,6 +91,7 @@ namespace st10082012_GoldLibrary.Controls
             this.btnFind.TabIndex = 3;
             this.btnFind.Text = "Find Call Numbers";
             this.btnFind.UseVisualStyleBackColor = false;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // MainMenuControl
             // 

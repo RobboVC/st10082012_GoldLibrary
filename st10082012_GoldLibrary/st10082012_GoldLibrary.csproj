@@ -50,6 +50,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\FindCallNumbersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FindCallNumbersControl.Designer.cs">
+      <DependentUpon>FindCallNumbersControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\IdentifyAreasControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -69,6 +75,12 @@
       <DependentUpon>ReplaceBooksControl.cs</DependentUpon>
     </Compile>
     <Compile Include="DeweyDictionary.cs" />
+    <Compile Include="FindCallNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindCallNumbers.Designer.cs">
+      <DependentUpon>FindCallNumbers.cs</DependentUpon>
+    </Compile>
     <Compile Include="IdentifyAreas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +107,9 @@
     <Compile Include="ReplaceBooks.Designer.cs">
       <DependentUpon>ReplaceBooks.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\FindCallNumbersControl.resx">
+      <DependentUpon>FindCallNumbersControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\IdentifyAreasControl.resx">
       <DependentUpon>IdentifyAreasControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ReplaceBooksControl.resx">
       <DependentUpon>ReplaceBooksControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindCallNumbers.resx">
+      <DependentUpon>FindCallNumbers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IdentifyAreas.resx">
       <DependentUpon>IdentifyAreas.cs</DependentUpon>
@@ -123,6 +141,7 @@
     <EmbeddedResource Include="ReplaceBooks.resx">
       <DependentUpon>ReplaceBooks.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Data\deweyMultiList.csv" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -137,7 +156,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\imgPinkBookcase.jpg" />
+    <None Include="Resources\imgBookShelfFind.jpg" />
     <Content Include="Resources\imgLibrary.jpg" />
+    <None Include="Resources\imgPicture.jpg" />
+    <None Include="Resources\imgMissingBooks.png" />
     <None Include="Resources\imgShelf2.jpg" />
     <None Include="Resources\imgShelf.png" />
   </ItemGroup>

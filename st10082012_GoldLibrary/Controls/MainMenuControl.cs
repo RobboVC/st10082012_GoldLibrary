@@ -17,15 +17,7 @@ namespace st10082012_GoldLibrary.Controls
         {
             InitializeComponent();
         }
-        /// <summary>
-        /// Disables the "Find" button.
-        /// </summary>
-        public void DisableFindButton()
-        {
-            btnFind.Enabled = false;
-            // btnIdentify.Enabled = false; // This line is commented out, so it doesn't affect the "Identify" button.
-        }
-
+        
         /// <summary>
         /// Opens the "Replace Books" form as a dialog.
         /// </summary>
@@ -42,6 +34,12 @@ namespace st10082012_GoldLibrary.Controls
         {
             IdentifyAreas identifyAreasForm = new IdentifyAreas();
             identifyAreasForm.ShowDialog();
+        }
+
+        public void SetFindButton()
+        {
+            FindCallNumbers findCallForm = new FindCallNumbers();
+            findCallForm.ShowDialog();
         }
 
         /// <summary>
@@ -64,6 +62,11 @@ namespace st10082012_GoldLibrary.Controls
         private void btnIdentify_Click(object sender, EventArgs e)
         {
             SetIdentifyButton();
+        }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            SetFindButton();
         }
     }
 }

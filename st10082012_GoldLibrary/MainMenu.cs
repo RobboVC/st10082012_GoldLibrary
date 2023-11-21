@@ -20,7 +20,6 @@ namespace st10082012_GoldLibrary
         public MainMenu()
         {
             InitializeComponent();
-            mainMenuControl1.DisableFindButton();
         }
 
         /// <summary>
@@ -41,5 +40,9 @@ namespace st10082012_GoldLibrary
             mainMenuControl1.SetIdentifyButton();
         }
 
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            mainMenuControl1.SetFindButton();
+        }
     }
 }
